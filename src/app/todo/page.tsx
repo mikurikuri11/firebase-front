@@ -1,9 +1,9 @@
-import Button from "@/components/Button"
+import Todo from '@/components/Todo'
 
 const page = () => {
   return (
     <div>
-      <Button />
+      <Todo />
     </div>
   )
 }
