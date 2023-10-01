@@ -1,5 +1,4 @@
-import { getHello } from '@/features/login/api/getHello'
-import Button from './Button';
+import Button from "@/features/login/components/Button"
 
 const page = () => {
   return (
