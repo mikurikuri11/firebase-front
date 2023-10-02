@@ -1,4 +1,3 @@
-
 'use client';
 
 import useFirebaseAuth from "../hooks/useFirebaseAuth";

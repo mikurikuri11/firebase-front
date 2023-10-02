@@ -7,6 +7,7 @@ import {
   signOut,
   signInWithPopup,
   GoogleAuthProvider,
+  getAdditionalUserInfo,
 } from "firebase/auth";
 import { useRouter } from "next/navigation";
 
@@ -23,9 +24,10 @@ export default function useFirebaseAuth() {
 
     if (result) {
       const user = result.user;
+      const details = getAdditionalUserInfo(result);
 
       router.push("/");
-      return user;
+      return { user, details };
     }
   };
 
